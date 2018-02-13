@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="img/logo1.png">
+    <title>CodeBlitz 2018</title>
+  </head>
+  <body>
+      
+  
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand order-1" href="#">
+              Presented by the Microsoft Tech Club
+          </a>
+        <a class="navbar-brand" href="#">
+              <img src="img/logo1.png" width="30" alt="">
+        </a>
+        <a class="navbar-brand display-1 ml-2" href="#">CodeBlitz 2018</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="participant.html" data-toggle="tooltip" data-placement="bottom" title="Click here to head to homepage!">Team Homepage<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <img src="img/arrow.png" alt="" width="17" class="mt-2">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lisp385.html" data-toggle="tooltip" data-placement="bottom" title="Current Language">LISP Language<span class="sr-only">(current)</span></a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    <!-- Question -->
+
+    <div class="card text-white bg-secondary mb-3 mx-auto" style="max-width: 60rem; margin-top: 5rem;">
+        <div class="card-header display-4 text-dark">LISP Language</div>
+        <div class="card-body">
+          <h5 class="card-title">This code accepts integers as follows:
+              t, the number of testcases to follow
+              n, the current number
+              then t numbers in succession.
+              Then the code checks whether the t numbers are divisible by n, and prints the number of such divisible numbers.
+            <br /><br />
+            Compiler : <a href="http://ideone.com/" class="text-dark">http://ideone.com/</a><br /> 
+Copy code into the editing area and select 'Common Lisp' from the list of languages below, and in the input box give input as given below. Click run.  
+          </h5>
+          <p class="card-text">
+              (defun enorinp()<br />
+              (setq tot (parse-integer (read-line) :junk-allowed T))<br />
+              (setq k (parse-integer (read-line) :junk-allowed T))<br />
+              (setq ctr 0<br />
+              (dotimes (n tot)<br />
+                (setq p (parse-integer (read-line):junk-allowed T))<br />
+                (if (= (mod p k) 1)<br />
+                  (setq ctr (- ctr 1))<br />
+                )<br />
+              )<br />
+              (format t "~a" ctr)<br />
+              )<br />
+              (enorinp)<br />
+              <div class="card bg-light mb-3 mt-3 text-dark" style="max-width: 60rem;">
+      
+                  <div class="card-body">
+                    <h5 class="card-title">Sample Input 1:</h5>
+                    <p class="card-text">
+                        3<br />
+                        2<br />
+                        2<br />
+                        5<br />
+                        6<br />
+                    </p>
+                  </div>
+              </div>
+              <div class="card bg-light mb-3 mt-3 text-dark" style="max-width: 60rem;">
+      
+                  <div class="card-body">
+                    <h5 class="card-title">Sample Output 1:</h5>
+                    <p class="card-text">
+                        2
+                    </p>
+                  </div>
+              </div>
+          </p>
+
+        </div>
+      </div>
+    
+    <!-- /Question --> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
