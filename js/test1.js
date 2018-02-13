@@ -9,7 +9,7 @@ function checkcode1(){
     var x=document.getElementById("code1");
     var y=document.getElementById("set2");
 
-    if(x.value=="admin"){
+    if(x.value=="pizza123"){
         alert("Set 2 Unlocked!");
         y.disabled=false;
         document.getElementById("set2Card").style.backgroundColor="#39add1";
