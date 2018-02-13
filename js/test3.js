@@ -9,7 +9,7 @@ function checkcode3(){
     var x=document.getElementById("code3");
     var y=document.getElementById("set4");
 
-    if(x.value=="admin2"){
+    if(x.value=="mtcrocks123"){
         alert("Set 4 Unlocked!");
         y.disabled=false;
         
